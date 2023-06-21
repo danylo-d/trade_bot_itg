@@ -1,5 +1,6 @@
 import time
 import datetime
+
 from api import BinanceAPI
 from strategy import MovingAverageStrategy
 

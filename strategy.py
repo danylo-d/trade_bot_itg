@@ -12,8 +12,8 @@ class MovingAverageStrategy:
         ma7 = self.calculate_moving_averages(candles, 7)
         ma25 = self.calculate_moving_averages(candles, 25)
         if ma7[-2] < ma25[-2] and ma7[-1] > ma25[-1]:
-            return "Long"
-        elif ma7[-2] > ma25[-2] and ma7[-1] < ma25[-1]:
             return "Short"
+        elif ma7[-2] > ma25[-2] and ma7[-1] < ma25[-1]:
+            return "Long"
         else:
             return None
